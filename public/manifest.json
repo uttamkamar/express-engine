@@ -1,6 +1,18 @@
 {
+  "manifest_version": 2,
   "short_name": "React App",
   "name": "Create React App Sample",
+  "version": "1.0",
+  "web_accessible_resources": ["images/*", "scripts/*"],
+  "permissions": ["activeTab"],
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    }
+  },
   "icons": [
     {
       "src": "favicon.ico",
@@ -18,6 +30,7 @@
       "sizes": "512x512"
     }
   ],
+
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
